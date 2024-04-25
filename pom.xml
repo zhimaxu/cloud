@@ -17,6 +17,8 @@
         <module>zhimaxu-gateway</module>
         <module>zhimaxu-auth</module>
         <module>zhimaxu-modules</module>
+        <module>zhimaxu-api</module>
+        <module>zhimaxu-api/zhimaxu-api-system</module>
     </modules>
 
     <properties>
