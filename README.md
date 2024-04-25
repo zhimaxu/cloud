@@ -62,3 +62,16 @@ git clone --recurse-submodules https://github.com/username/parent_repo.git
 git submodule update --init --recursive
 ~~~
 
+## 学习路线
+1. 准备空模块
+2. 逐步引入模块[①](#Q1)
+3. 模块填充顺序[②](#Q2)
+   1. 拟定的顺序core->redis->datasource->security
+
+## 所有经历的问题
+1. 包版本始终无法找到最新的<span id="Q1"></span>
+2. 模块引入顺序互相牵制<span id="Q2"></span>
+   1. 先准备核心模块 __core__
+   2. 准备 __redis__ 模块时
+      1. 无法自动装配。找不到 'RedisConnectionFactory' 类型的 Bean。
+      2. 自版本 6.0 起已弃用 org.springframework.cache.annotation.CachingConfigurerSupport

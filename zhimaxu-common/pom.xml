@@ -10,11 +10,17 @@
     </parent>
 
     <artifactId>zhimaxu-common</artifactId>
+    <packaging>pom</packaging>
+    <description>通用模块</description>
 
-    <properties>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-
+    <modules>
+        <module>zhimaxu-common-core</module>
+        <module>zhimaxu-common-datascope</module>
+        <module>zhimaxu-common-datasource</module>
+        <module>zhimaxu-common-redis</module>
+        <module>zhimaxu-common-log</module>
+        <module>zhimaxu-common-seata</module>
+        <module>zhimaxu-common-security</module>
+        <module>zhimaxu-common-swagger</module>
+    </modules>
 </project>
